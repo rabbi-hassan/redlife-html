@@ -1,0 +1,1847 @@
+/**
+
+Template Name: RadLife - RedLife HTML Template
+Template URL: https://coderitsolution.com
+Author: Coder IT Solution
+Author URI: https://coderitsolution.com
+Descripion: RadLife HTML Template
+Keyword: RadLife html,RadLife Template
+
+**/
+
+
+html{
+	font-size: 62.5%;
+}
+
+
+body{
+	margin:0;
+	font-size: 16px;
+	font-size: 1.4rem;
+	font-weight: 400;
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
+p{
+	font-weight: 400;
+	color: #3b4954;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 28px;
+	line-height: 2.8rem;
+}
+h1 {
+	font-size: 50px;
+	font-size: 5rem;
+	color: #FFF;
+	font-weight: 700;
+}
+
+
+
+/*Button Style*/
+.btn-sty-1 {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FFF;
+	border: 2px solid #FB3640;
+	padding: 10px 20px;
+	font-size: 16px;
+	display: inline-block;
+	background: #FB3640;
+	border-radius: 5px;
+	transition: .3s;
+}
+.btn-sty-1:hover{
+	background: transparent;
+	color: #FB3640;
+}
+.btn-sty-1 i {
+	font-size: 20px;
+}
+
+.btn-sty-2 {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FB3640;
+	border: 2px solid #fff;
+	padding: 10px 20px;
+	font-size: 16px;
+	display: inline-block;
+	background: #FFF;
+	transition: .3s;
+}
+
+.btn-sty-2:hover{
+	background: transparent;
+	color: #fff;
+}
+
+
+
+
+
+.section-padding {
+	padding: 100px 0;
+}
+.cits-title h2 {
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: capitalize;
+}
+.cits-title h4 {
+	color: #FB3640;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.cits-title p {
+	text-align: center;
+	margin-top: 20px;
+}
+
+  /*****************************/
+ /****** 1. Header Top Css ****/
+/*****************************/
+
+/*Animating Hamburger Icon on Click*/
+.hamburger{
+  display: none;
+}
+.hamburger div {
+	width: 25px;
+	height: 3px;
+	background: #EA062B;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+	transition: all 0.7s ease;
+	width:0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+/*Animating Hamburger Icon on Click*/
+
+.top-left-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top-right-content {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.header-top-area {
+	position: relative;
+	z-index: 1;
+}
+.header-top-area::before {
+	content: "";
+	position: absolute;
+	width: 62%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #111111;
+	z-index: -1;
+}
+.header-top-area::after {
+	content: "";
+	position: absolute;
+	width: 38%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background: #EA062B;
+	z-index: -1;
+}
+
+
+.top-left-content li a {
+	font-size: 16px;
+	color: #F2F2F2;
+	margin: 12px 0;
+	display: inline-block;
+	transition: .3s;
+}
+.top-left-content li a i {
+	margin-right: 5px;
+	padding-right: 10px;
+	border-right: 1px solid #F2F2F2;
+	transition: .3s;
+}
+.top-left-content li a:hover i{
+	border-color:#EA062B;
+}
+.top-left-content li a:hover{
+	color: #EA062B;
+}
+
+.top-right-content li:first-child{
+	margin-right: 10px;
+}
+.top-right-content li a {
+	padding: 4px 10px;
+	background: #FFF;
+	min-width: 110px;
+	width: 80%;
+	font-size: 16px;
+	text-align: center;
+	color: #EA062B;
+	border: 1px solid #FFF;
+	transition: .3s;
+}
+.top-right-content li a i {
+	margin-right: 5px;
+}
+.top-right-content li a:hover{
+	color: #FFF;
+	background: transparent;
+}
+.logo-area {
+		position: relative;
+		z-index: 9;
+	}
+/* Header Bottom or Menu  */
+.header-bottom {
+	position: relative;
+	z-index: 1;
+	padding: 22px 0;
+}
+.header-bottom::before {
+	content: "";
+	position: absolute;
+	width: 32%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #EA062B;
+	z-index: 3;
+}
+.header-bottom::after {
+	content: "";
+	position: absolute;
+	width: 68%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background: #fff;
+	z-index: -1;
+}
+.logo-area h2 a {
+	font-size: 45px;
+	font-weight: 900;
+	color: #FFF;
+}
+.menu-area ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.menu-area ul li a {
+	font-size: 18px;
+	font-weight: 500;
+	color: #111111;
+	margin-right: 40px;
+	text-transform: capitalize;
+	transition: .3s;
+}
+.menu-area ul li a:hover{
+	color: #EA062B;
+}
+.menu-area ul li:last-child a{
+	margin-right: 0 !important;
+}
+
+
+
+  /*****************************/
+ /****** 2. Banner all Css ****/
+/*****************************/
+.banner-area {
+	height: 80vh;
+	position: relative;
+	z-index: 0;
+	text-align: center;
+}
+.banner-area::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: linear-gradient(to top, rgba(23, 23, 58, 0.98), rgba(23, 23, 58, 0.45));
+	z-index: -2;
+}
+.banner-area .container{
+	height: 100%;
+}
+.banner-content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-form-area {
+	max-width: 680px;
+	width: 100%;
+	background: #FFF;
+	padding: 8px;
+	border-radius: 4px;
+	margin-top: 50px;
+	position: relative;
+}
+.main-form-area::before {
+	content: "";
+	position: absolute;
+	width: calc(100% + 20px);
+	height: calc(100% + 20px);
+	top: -10px;
+	left: -10px;
+	background: #FFF;
+	border-radius: 3px;
+	z-index: -1;
+	opacity: 0.15;
+}
+
+
+
+.main-form-area form .btn-sty-1 {
+	font-weight: 400;
+}
+.main-form-area form .btn-sty-1 i {
+	font-size: 16px;
+	margin-right: 5px;
+}
+
+.main-form-area form .form-group > i {
+	color: #FB3640;
+	font-size: 16px;
+}
+.main-form-area form .form-group {
+	display: flex;
+	align-items: center;
+	width: 38%;
+	margin-right: 2%;
+	border-bottom: 1px solid #e0e0e0;
+	padding:9px;
+}
+.main-form-area form .form-group:last-child {
+	border: none;
+	width: 20%;
+	margin-right: 0;
+	padding: 0;
+}
+
+.main-form-area form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.main-form-area form .select-grouph-area {
+	width: 100%;
+}
+.main-form-area form .form-select {
+	font-size: 16px;
+	border: none;
+	outline: none !important;
+	cursor: pointer;
+	box-shadow: none !important;
+}
+
+.main-form-area form .select2-container .select2-selection--single{
+	border: none !important;
+}
+
+
+.main-form-area form .select2-container .select2-selection--single .select2-selection__rendered {
+	text-align: left;
+}
+
+
+
+  /****************************************/
+ /****** 3. Avaiable Blood Donors Css ****/
+/****************************************/
+
+
+.avaiable-blood-donors .cits-title h2 {
+	color: #17173A;
+	margin-bottom: 40px;
+}
+.avaiable-single-blood a{
+	background: #17173A;
+	border-radius: 7px;
+	padding: 40px 0;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: .3s;
+}
+.avaiable-single-blood a:hover {
+	box-shadow: 0 5px 15px rgba(23, 23, 58, 0.35);
+	-webkit-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	transform: translateY(-5px);
+	transition: .3s;
+}
+.avaiable-single-blood a::after {
+	position: absolute;
+	content: "\f043";
+	bottom: -3px;
+	right: -5px;
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-size: 5.625rem;
+	opacity: 0.3;
+	line-height: 1;
+	color: #FB3640;
+}
+
+
+.avaiable-single-blood a span {
+	color: #FB3640;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.avaiable-single-blood a span:last-child {
+	color: #FFF;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+}
+
+
+
+
+
+  /*********************************/
+ /****** 4. Blood Lab Area Css ****/
+/*********************************/
+
+.all-blood-lab.section-padding {
+	background: linear-gradient(to bottom, rgba(251, 54, 64, 0.15), #fff);
+}
+
+.blood-lab-left img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+.blood-lab-right .cits-title h2 {
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+.cits-title p {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.blood-lab-content h4 {
+	font-size: 24px;
+}
+.blood-lab-content h4 {
+	font-size: 24px;
+	padding-bottom: 10px;
+}
+.blood-lab-right .cits-title p {
+	text-align: left;
+}
+.blood-lab-icon i {
+	color: #FB3640;
+	font-size: 32px;
+}
+
+.blood-lab-icon {
+	background: #17173A;
+	height: 65px;
+	width: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+.blood-lab-item {
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-top: 35px;
+}
+
+.blood-lab-left {
+	position: relative;
+}
+.blood-lab-left a {
+	width: 150px;
+	height: 150px;
+	background: #FB3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 42px;
+	color: #FFF;
+	position: absolute;
+	bottom: -15px;
+	right: -15px;
+}
+.blood-lab-right {
+	padding-left: 30px;
+}
+
+
+
+  /***********************************/
+ /****** 5. Team Member Area Css ****/
+/***********************************/
+.all-team-members{
+	background: #F9F9F9;
+}
+.all-compaign-gallery .cits-title,
+.all-team-members .cits-title {
+	margin-bottom: 50px;
+}
+
+.member-image{
+	height: 385px;
+	position: relative;
+	overflow: hidden;
+}
+.member-image ul {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000000b0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: -100%;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: .5s;
+}
+.member-image:hover ul{
+	top: 0%;
+	visibility: visible;
+	opacity: 1;
+	transition: .5s;
+}
+.member-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+.member-image .cits-title {
+	margin-bottom: 50px;
+}
+
+.single-member h4 {
+	font-size: 22px;
+	padding: 28px 0 20px 0;
+}
+.single-member {
+	text-align: center;
+	background: #FFF;
+	box-shadow: 0 5px 15px rgba(23, 23, 58, 0.1);
+	padding: 25px;
+}
+.single-member p {
+	font-size: 18px;
+}
+
+.member-image ul li a {
+	color: #FB3640;
+	font-size: 20px;
+	background: #FFF;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	transition: .3s;
+}
+.member-image ul li a:hover{
+	color:#FFF;
+	background:#FB3640;
+	transition: .3s;
+}
+
+.member-image ul li:first-child a{
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+.member-image ul li:last-child a{
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	margin-right: 0;
+}
+
+
+
+
+
+
+  /*************************************/
+ /****** 6. Bloodlab Committed Css ****/
+/*************************************/
+
+.all-bloodlab-committed{
+	position: relative;
+	z-index: 1;
+}
+.all-bloodlab-committed::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: multiply;
+	background: linear-gradient(to right, #17173A, #FB3640);
+	z-index: -1;
+}
+.bloodlab-committed-top-content h2 {
+	font-size: 42px;
+	color: #FFF;
+	text-align: center;
+	line-height: 62px;
+	max-width: 850px;
+	margin: auto;
+	margin-bottom: 70px;
+}
+.bloodlab-committed-btm-content {
+	text-align: center;
+}
+.bloodlab-committed-btm-content i {
+	color: #FB3640;
+	font-size: 55px;
+}
+.bloodlab-committed-btm-content p {
+	font-size: 20px;
+	color: #FFF;
+	margin-top: 15px;
+}
+
+
+
+  /*******************************/
+ /****** 7. Gallery Area Css ****/
+/*******************************/
+
+
+.gallery-main-area a {
+	position: relative;
+}
+.gallery-main-area a span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #0000005e;
+	visibility: hidden;
+	opacity: 0;
+	transition: .5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.gallery-main-area a:hover span{
+	visibility: visible;
+	opacity: 1;
+	transition: .5s;
+}
+.gallery-main-area a span i {
+	background: #FFF;
+	width: 40px;
+	height: 40px;
+	font-size: 22px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FB3640;
+}
+.gallery-main-area {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 30px;
+}
+.gallery-main-area a img {
+	width: 100%;
+	height: 380px;
+	object-fit: cover;
+}
+
+
+
+  /*******************************/
+ /****** 8. Clients Area Css ****/
+/*******************************/
+
+.main-clients-area {
+	background: #FB3640;
+	margin-top: 50px;
+}
+
+.single-clients-say img {
+	width: 50px !important;
+	height: 50px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin: auto;
+}
+.single-clients-say {
+	text-align: center;
+	color: #FFF;
+	padding: 50px;
+}
+.single-clients-say p {
+	font-size: 20px;
+	color: #FFF;
+	width: 80%;
+	margin: auto;
+	line-height: 35px;
+	padding: 20px 0;
+}
+.single-clients-say h2 {
+	font-size: 32px;
+}
+.single-clients-say ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.single-clients-say ul li span {
+	font-weight: bold;
+	margin-right: 15px;
+}
+
+.owl-prev,
+.owl-next {
+	background: transparent !important;
+}
+.clients-cl-area .owl-prev i,
+.clients-cl-area .owl-next i {
+	font-size: 20px;
+	line-height: 35px;
+	width: 40px;
+	height: 40px;
+	background: #FFF !important;
+	border-radius: 50% !important;
+	border: 2px solid #FFF !important;
+	color: #FB3640;
+	
+}
+.clients-cl-area .owl-prev:hover i,
+.clients-cl-area .owl-next:hover i{
+	background: #FB3640 !important;
+	color: #fff;
+}
+
+.clients-cl-area .owl-next {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+.clients-cl-area .owl-prev {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.clients-cl-area.owl-theme .owl-nav {
+	margin-top: 0;
+}
+
+
+
+
+
+  /********************************/
+ /****** 9. Call Now Area Css ****/
+/********************************/
+
+
+
+
+.call-now-area {
+	position: relative;
+	z-index: 1;
+}
+.call-now-area::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: multiply;
+	background: #17173AD4;
+	z-index: -1;
+}
+
+.call-new-content {
+	border: 10px solid #FB3640;
+	position: relative;
+	text-align: center;
+	color: #FFF;
+	padding: 50px 0;
+}
+
+.top-icon i {
+	color: #FFF;
+	font-size: 20px;
+}
+.top-icon {
+	background: #FB3640;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 50%;
+	top: -27px;
+	transform: rotate(45deg);
+}
+
+.call-new-content h4 {
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.call-new-content h2 {
+	font-size: 55px;
+	padding: 30px 0;
+	font-weight: bold;
+}
+
+.call-new-content a{
+	color: #FFF;
+}
+.call-new-content a:hover{
+	color: #FB3640;
+}
+
+.call-new-content ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.call-new-content ul li a {
+	font-size: 18px;
+	margin-right: 40px;
+}
+
+.call-new-content ul li:last-child a{
+	margin-right: 0px;
+}
+
+.call-new-content ul li a i {
+	margin-right: 10px;
+}
+
+
+
+  /*************************************/
+ /****** 10. Community Partner Css ****/
+/*************************************/
+
+.community-partner{
+	background: linear-gradient(to top, rgba(251, 54, 64, 0.15), #fff);
+}
+.community-partner.section-padding .cits-title {
+	border-bottom: 1px solid #dee2e6 !important;
+	padding-bottom: 25px;
+}
+.community-partner-image {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 50px;
+}
+.community-partner-image li img {
+	width: 180px;
+	height: 180px;
+	object-fit: contain;
+}
+
+
+.our-new-area {
+	background: #F9F9F9;
+}
+
+.our-new-area .cits-title {
+	margin-bottom: 50px;
+}
+.image-area {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+.image-area img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: .3s;
+}
+.image-area:hover img {
+	transform: scale(1.1);
+	transition: .3s;
+}
+.single-new-area {
+	background: #FFF;
+	box-shadow: 0 5px 15px rgba(23, 23, 58, 0.1);
+	height: 100%;
+}
+.new-content {
+	padding: 25px;
+}
+.new-content ul {
+	display: flex;
+	align-items: center;
+}
+.new-content ul li a {
+	font-size: 16px;
+	color: #FB3640;
+	margin-left: 35px;
+}
+.new-content ul li:first-child a {
+	margin-left: 0px;
+}
+
+.new-content ul li a i {
+	margin-right: 6px;
+}
+.new-content h2 a {
+	font-size: 25px;
+	margin: 20px 0;
+	color: #000;
+}
+.new-content > a {
+	font-size: 16px;
+	color: #000;
+	margin-top: 20px;
+}
+.new-content > a:hover,
+.new-content h2 a:hover{
+	color: #FB3640;
+}
+
+
+
+
+  /*******************************/
+ /****** 11. Footer Area Css ****/
+/*******************************/
+footer {
+	position: relative;
+	z-index: 1;
+	padding-top: 100px;
+}
+footer::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: multiply;
+	background: #FB3640;
+	background: -webkit-linear-gradient(to right, #17173A, #FB3640);
+	background: linear-gradient(to right, #17173A, #FB3640);
+	z-index: -1;
+}
+
+
+.footer-top-content ul {
+	display: flex;
+	align-items: center;
+}
+
+.footer-top-content ul li a {
+	font-size: 25px;
+	color: #FFF;
+	margin-left: 50px;
+}
+.footer-top-content ul li a:hover{
+	color:#FB3640;
+}
+.footer-top-content ul li:first-child a{
+	margin-left: 0px;
+}
+.footer-top-content ul li a i {
+	color: #FB3640;
+	margin-right: 10px;
+}
+.footer-top-content ul li a:hover i{
+	color: #FFF;
+}
+
+.footer-top-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 45px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer-middle {
+	margin: 50px 0;
+}
+.footer-left-content form input {
+	font-size: 18px;
+	padding: 15px;
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 3px;
+	color: #FFF;
+	outline: none;
+	width: 100%;
+}
+.footer-left-content form input::placeholder {
+  color: red;
+  opacity: .7; 
+}
+.footer-left-content form input:focus{
+	border-color: #FB3640;
+}
+
+.footer-left-content form {
+	position: relative;
+}
+
+.footer-left-content form .btn-sty-1 {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+.footer-left-content a img {
+	width: 220px;
+	height: 70px;
+	object-fit: contain;
+}
+.footer-left-content p {
+	color: #FFF;
+	font-size: 16px;
+	padding: 30px 0;
+}
+.copyright {
+	padding: 22px;
+	background: #17173A85;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	text-align: center;
+}
+.copyright p{
+	font-size: 18px;
+	color: #FFF;
+}
+
+.copyright p a{
+	color: #FB3640;
+}
+.footer-items h4 {
+	font-size: 25px;
+	color: #FFF;
+	text-transform: capitalize;
+	padding-bottom: 13px;
+	margin-bottom: 13px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	position: relative;
+}
+.footer-items h4::before {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 35px;
+	height: 3px;
+	background: #FB3640;
+}
+
+.footer-items ul li a {
+	color: #FFF;
+	font-size: 15px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.footer-items ul li a:hover{
+	color: #FB3640;
+}
+.footer-items ul li a i {
+	margin-right: 8px;
+}
+.copyright p a:hover{
+	border-bottom: 1px solid #FB3640;
+}
+
+.footer-items.footer-left-content ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+.footer-items.footer-left-content ul li {
+	margin-right: 20px;
+}
+.footer-items.footer-left-content ul li:last-child{
+	margin-right: 0px;
+}
+.footer-items.footer-left-content ul li a {
+	font-size: 22px;
+	width: 40px;
+	height: 40px;
+	background: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+	transition: .3s;
+}
+.footer-items.footer-left-content ul li a:hover{
+	background: #FFF;
+}
+.footer-items.footer-left-content ul li a i{
+	margin-right: 0px;
+}
+
+  /*****************************/
+ /************* 2 Page ********/
+/*****************************/
+  /******************************************/
+ /****** 12. Secoundary Banner Area Css ****/
+/******************************************/
+.other-page-banner {
+	padding: 150px 0;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.other-page-banner::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #000000ad;
+	z-index: -1;
+}
+.other-page-banner ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.other-page-banner ul li a.active{
+	color: #FB3640;
+}
+.other-page-banner ul li a {
+	color: #FFF;
+	font-size: 16px;
+	margin-left: 12px;
+	padding-left: 12px;
+	position: relative;
+	text-transform: capitalize;
+}
+.other-page-banner ul li:first-child a{
+	margin-left: 0px;
+	padding-left: 0px;
+}
+.other-page-banner ul li a::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 70%;
+	background: #FFF;
+	left: 0;
+	top: 5px;
+	transform: rotate(20deg);
+}
+.other-page-banner ul li:first-child a::before{
+	display: none;
+}
+
+
+  /*****************************/
+ /****** 13. Hero Area Css ****/
+/*****************************/
+.cits-hero-area {
+	background: #FB3640;
+	padding: 50px 0;
+}
+
+.hero-area-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.hero-area-content h2 {
+	color: #FFF;
+	font-size: 40px;
+}
+  /*****************************************/
+ /****** 14. terms conditions Area Css ****/
+/*****************************************/
+.terms-and-conditions h2 {
+	font-size: 32px;
+	text-transform: capitalize;
+	padding-bottom: 20px;
+}
+.terms-and-conditions h4 {
+	font-size: 25px;
+	padding: 20px 0;
+}
+.terms-and-conditions ul li i{
+	padding-right: 5px;
+	color: #FB3640;
+}
+.terms-and-conditions ul li {
+	font-size: 16px;
+	line-height: 28px;
+	padding-bottom: 5px;
+}
+
+.all-404-page{
+	text-align: center;
+}
+.all-404-page h1 {
+	font-size: 150px;
+	color: #FB3640;
+}
+.all-404-page h2 {
+	font-size: 50px;
+	padding: 10px 0;
+}
+.all-404-page .btn-sty-1:hover{
+	color: #FB3640;
+}
+.all-404-page p {
+	max-width: 500px;
+	padding: 20px 0;
+	margin: auto;
+}
+
+
+  /**************************************/
+ /****** 15. Search Result Area Css ****/
+/**************************************/
+.other-page-banner.search-page {
+	padding: 100px 0;
+}
+.other-blood-search {
+	background: #141433;
+	color: #FFF;
+	padding: 30px 0;
+}
+.other-blood-search form {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+.other-blood-search form .form-group {
+	width: 28%;
+}
+.other-blood-search form label {
+	font-size: 16px;
+	padding-bottom: 8px;
+	text-transform: capitalize;
+}
+.other-blood-search form .search-button {
+	min-width: 135px;
+}
+.other-blood-search form .select2.select2-container.select2-container--default {
+	width: 100% !important;
+}
+
+
+.other-blood-search form .select2-selection.select2-selection--single {
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	height: 47px;
+}
+.other-blood-search form .select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: #444;
+	line-height: 47px;
+	font-size: 16px;
+}
+.other-blood-search form .select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 46px;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	width: 20px;
+}
+.other-blood-search form .select2-selection.select2-selection--single {
+	border: 1px solid #FB3640;
+}
+.other-blood-search form select {
+	font-size: 16px;
+	padding: 10px;
+	border: 1px solid #FB3640;
+}
+
+
+
+  /**************************************/
+ /****** 16. Search Donner Area Css ****/
+/**************************************/
+.all-contact-area,
+.all-blood-doner-area {
+	background: linear-gradient(to bottom, rgba(251, 54, 64, 0.15), #fff);
+}
+
+.single-blood-doner-content a h2 {
+	font-size: 25px;
+	color: #000;
+	text-transform: capitalize;
+}
+.single-blood-doner-content a h2:hover{
+	color: #FB3640;
+}
+.single-blood-doner-content ul li {
+	font-size: 16px;
+	padding-bottom: 12px;
+}
+
+.single-blood-doner-content ul li span {
+	color: #FB3640;
+}
+.single-blood-doner-content ul li i {
+	color: #FB3640;
+	margin-right: 5px;
+}
+.single-blood-doner {
+	background: #FFF;
+	box-shadow: 0 5px 15px rgba(23, 23, 58, 0.1);
+	border-radius: 4px;
+}
+
+.single-blood-doner-content ul {
+	padding-top:22px;
+}
+
+
+.single-blood-doner > a {
+	height: 350px;
+	overflow: hidden;
+}
+.single-blood-doner a img {
+	width: 100%;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	height: 100%;
+	object-fit: cover;
+	transition: .3s;
+}
+.single-blood-doner:hover > a img {
+	transform: scale(1.1);
+	transition: .3s;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+
+.single-blood-doner-content {
+	position: relative;
+	padding: 25px;
+	background: #FFF;
+	transition: .3s;
+}
+
+.single-blood-doner-content .btn-sty-1 {
+	width: 86%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.single-blood-doner-content .btn-sty-1 {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.single-blood-doner:hover .btn-sty-1{
+	opacity: 1;
+	visibility: visible;
+	bottom: 30px;
+}
+.single-blood-doner:hover .single-blood-doner-content {
+	padding-bottom: 95px;
+	margin-top: -70px;
+}
+
+
+
+  /**************************************/
+ /****** 17. Contact Page  Area Css ****/
+/**************************************/
+.contact-map-area {
+	background: #17173A;
+	padding: 40px;
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+}
+
+.contact-map-area h2 {
+	font-size: 32px;
+	position: relative;
+	padding-bottom: 3px;
+	color: #FFF;
+	margin-bottom: 30px;
+}
+.contact-map-area h2::after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 35px;
+	height: 2px;
+	background: #FB3640;
+}
+
+.contact-map-area ul li a i {
+	color: #FB3640;
+	margin-right: 10px;
+}
+.contact-map-area ul li a {
+	font-size: 20px;
+	color: #FFF;
+	margin-bottom: 20px;
+}
+
+.contact-map-area iframe {
+	width: 100%;
+	height: 200px;
+	border-radius: 8px;
+	margin-top: 10px;
+}
+
+
+.all-contact-area .row {
+	background-color: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 10px 35px rgba(251, 54, 64, 0.15);
+	margin-top: 50px;
+}
+
+.main-contact-form {
+	background: #FFF;
+	height: 100%;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	padding: 40px;
+}
+
+
+.main-contact-form .top-items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-contact-form form .form-group {
+	width: 100%;
+	padding-bottom: 18px;
+}
+.main-contact-form form .top-items .form-group {
+	width: 49%;
+}
+.main-contact-form form label {
+	display: block;
+	font-size: 16px;
+	font-weight: 500;
+	padding-bottom: 5px;
+}
+
+.main-contact-form form textarea,
+.main-contact-form form input {
+	font-size: 16px;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #DDD;
+	box-shadow: none;
+	outline: none;
+	border-radius: 3px;
+}
+.main-contact-form form textarea:focus,
+.main-contact-form form input:focus{
+	border-color: #FB3640;
+}
+.main-contact-form form textarea{
+	min-height: 140px;
+	max-height: 140px;	
+}
+.main-contact-form form input.btn-sty-1 {
+	border: 2px solid #FB3640 !important;
+}
+
+
+
+
+  /**************************************/
+ /****** 18. Campaigs Page Area Css ****/
+/**************************************/
+.all-campaigs-area {
+	background: linear-gradient(to bottom, rgba(251, 54, 64, 0.15), #fff);
+}
+
+.all-campaigs-area .cits-title {
+	padding-bottom: 50px;
+}
+
+.compaigs-image{
+	position: relative;
+}
+.compaigs-image a {
+	width: 100%;
+}
+
+.top-date {
+	background: #FB3640;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.compaigs-image a img {
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
+}
+
+.top-date p {
+	font-size: 18px;
+	color: #FFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+}
+.top-date p span {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.single-campaigs h2 {
+	font-size: 30px;
+	padding: 20px 0;
+}
+.single-campaigs {
+	background: #FFF;
+	padding: 20px;
+	box-shadow: 0 5px 15px rgba(23, 23, 58, 0.1);
+}
+
+
+
+
+  /**************************************/
+ /****** 19. Single Donner Area Css ****/
+/**************************************/
+
+.other-page-banner.search-page.single-donner img {
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 3px;
+	object-position: top;
+}
+.other-page-banner.search-page.single-donner h2 {
+	font-size: 24px;
+	color: #FFF;
+	margin-top: 18px;
+}
+.other-page-banner.search-page.single-donner ul li a:hover{
+	color: #FB3640;
+}
+
+.other-page-banner.search-page.single-donner ul li a::before {
+	display: none;
+}
+
+.single-detalse p {
+	font-size: 22px;
+	color: #FFF;
+	font-weight: 700;
+}
+.single-detalse p i {
+	margin-right: 10px;
+}
+.single-detalse p span {
+	color: #FB3640;
+	font-weight: 400;
+	margin-left: 10px;
+}
+.other-page-banner.search-page.single-donner .container {
+	position: relative;
+}
+.single-detalse {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #141433;
+	box-shadow: 0 5px 15px #17173A4f;
+	padding: 30px;
+	border-radius: 5px;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: -145px;
+}
+
+
+
+.single-doner-area.section-padding {
+	background: linear-gradient(to bottom, rgba(251, 54, 64, 0.15), #fff);
+}
+.single-doner-content ul {
+	background: #FB36401a;
+	padding: 15px;
+	border-radius: 8px;
+}
+
+.single-doner-content ul li {
+	font-weight: 700;
+	color: #17173A;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	border-bottom: 1px dashed #c7c7c7;
+	font-size: 15px;
+	padding: 10px 0;
+}
+.single-doner-content ul li .caption {
+	width: 20%;
+	position: relative;
+	font-weight: 700;
+	padding-right: 10px;
+}
+.single-doner-content ul li .value {
+	width: 80%;
+	padding-left: 20px;
+}
+
+.single-doner-content ul li .caption::after {
+	position: absolute;
+	content: ':';
+	top: 0;
+	right: 0;
+}
+.single-doner-content ul {
+	background: #FB36401a;
+	padding: 15px;
+	border-radius: 8px;
+	margin-top: 30px;
+}
+
+.single-doner-content h2 {
+	font-size: 28px;
+	margin-bottom: 18px;
+}
+
+.single-doner-content ul li:first-child{
+	padding-top: 0;
+}
+.single-doner-content ul li:last-child{
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+.single-doner-contact {
+	background: #141433;
+	border-radius: 5px;
+	padding: 30px;
+}
+
+.single-doner-contact h2 {
+	color: #FFF;
+	font-size: 22px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	margin-bottom: 25px;
+}
+
+.single-doner-contact form textarea,
+.single-doner-contact form input {
+	width: 100%;
+	font-size: 16px;
+	padding: 8px;
+	border: 1px solid #FFF;
+	border-radius: 3px;
+	outline: none;
+	margin-bottom: 15px;
+}
+.single-doner-contact form textarea{
+	min-height: 120px;
+	max-height: 120px;
+}
+
+.single-doner-contact form input.btn-sty-1 {
+	border: 2px solid #FB3640 !important;
+}
+
+
+
+  /**************************************/
+ /****** 19. Single Campaigns   Css ****/
+/**************************************/
+.single-campaigns-content img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	margin-bottom: 40px;
+}
+.single-campaigns-content h2 {
+	font-size: 45px;
+	padding-bottom: 30px;
+}
+.single-campaigns-content p {
+	padding-bottom: 30px;
+}
+.list-item ul li {
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+.list-item ul {
+	width: 49%;
+}
+.list-item ul li i {
+	color: #FB3640;
+	font-size: 14px;
+	margin-right: 8px;
+}
+.list-item {
+	display: flex;
+}
+.single-campaigns-cl-img img {
+	height: 330px;
+	width: 95% !important;
+	object-fit: cover;
+	border-radius: 5px;
+}
+.single-campaigns-cl {
+	margin-top: 50px;
+}
+.single-campaigns-cl.owl-theme .owl-dots .owl-dot span {
+	width: 23px !important;
+	height: 5px !important;
+}
+.single-campaigns-cl.owl-theme .owl-dots .owl-dot.active span{
+	background: #FB3640 !important;
+	width: 30px !important;
+} 
+.sinlge-box-item {
+	background: #FEE1E3;
+	padding: 20px;
+	position: relative;
+	border-radius: 10px;
+	margin-bottom: 40px;
+}
+.sinlge-box-item::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	background: red;
+	left: 0;
+	bottom: -4px;
+	border-radius: 10px;
+	z-index: -1;
+}
+
+.sinlge-box-item h2 {
+	font-size: 28px;
+	padding-bottom: 10px;
+}
+.sinlge-box-item ul li {
+	font-size: 16px;
+	padding: 12px 0;
+	color: #000;
+	border-bottom: 1px solid #bbb;
+}
+.sinlge-box-item ul li:last-child{
+	padding-bottom: 0;
+	border-bottom: none;
+}
+.sinlge-box-item ul li a{
+	color: #000;
+}
+.sinlge-box-item ul li a:hover{
+	color: #FB3640;
+}
+.sinlge-box-item ul li a i {
+	font-size: 13px;
+}
+.sinlge-box-item p {
+	padding: 10px 0 30px 0;
+}
+
+.sinlge-box-item.recent-post ul li a {
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
+}
+
+.sinlge-box-item ul li a h2 {
+	font-size: 18px;
+}
+.sinlge-box-item ul li a h2 span {
+	color: #FB3640;
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+}
+.sinlge-box-item.recent-post ul li a img {
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+	border-radius: 5px;
+	margin-right: 10px;
+}

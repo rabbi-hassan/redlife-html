@@ -1,0 +1,530 @@
+
+@media all and (max-width: 1775px){
+	.header-top-area::after {
+		width: 33%;
+	}
+	.header-top-area::before {
+		width: 67%;
+	}
+	.header-bottom::before {
+		width: 30%;
+	}
+
+}
+
+@media all and (max-width: 1399px){
+	.community-partner-image li img {
+		width: 140px;
+		height: 140px;
+	}
+}
+@media all and (max-width: 1199px){
+	.menu-area ul li a {
+		font-size: 16px;
+		margin-right: 20px;
+	}
+	.header-bottom {
+		padding: 15px 0;
+	}
+
+
+
+	.cits-title p {
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+	.blood-lab-right .cits-title p {
+		margin-top: 10px;
+	}
+	.blood-lab-content h4 {
+		font-size: 22px;
+		padding-bottom: 5px;
+	}
+	.blood-lab-item {
+		margin-top: 20px;
+	}
+	.blood-lab-icon {
+		height: 55px;
+		width: 55px;
+	}
+
+	.blood-lab-right {
+		padding-left: 0;
+	}
+
+
+
+	.member-image {
+		height: 300px;
+	}
+	.bloodlab-committed-top-content h2 {
+		font-size: 35px;
+		max-width: 760px;
+	}
+	.gallery-main-area a img {
+		height: 320px;
+	}
+	.single-clients-say p {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.community-partner-image li img {
+		width: 120px;
+		height: 120px;
+	}
+	.new-content ul li a {
+		font-size: 14px;
+		margin-left: 25px;
+	}
+	.new-content h2 a {
+		font-size: 20px;
+		margin: 15px 0;
+	}
+	.new-content > a {
+		font-size: 15px;
+		margin-top: 15px;
+	}
+
+
+	.footer-top-content ul li a {
+		font-size: 20px;
+		margin-left: 30px;
+	}
+
+}
+
+
+
+
+
+
+
+@media all and (min-width: 992px){
+	
+    .menu-area ul li.fade{
+        opacity: 1 !important;
+    }
+
+}
+
+
+
+@media all and (max-width: 991px){
+	/* Mobile Menu	*/
+	.hamburger {
+		display: inline-block;
+		transition: all 0.3s ease;
+		z-index: 99;
+	}
+
+	.logo-area {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.menu-area ul {
+		background: #fff;
+		height: auto;
+		width: 100vw;
+		flex-direction: column;
+		clip-path: circle(20px at 90% -20%);
+		transition: all .5s ease-out;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	  .menu-area ul.open{
+	  	clip-path: circle(1000px at 90% -10%);
+			transition: all .5s ease-out;
+	    pointer-events: all;
+	    padding: 65px 0 30px 0;
+	    z-index: 2;
+	  }
+
+	  .menu-area ul li.fade{
+	    opacity: 1 !important;
+	  }
+	  .menu-area ul li a {
+		font-size: 15px;
+		margin-right: 0;
+		margin-bottom: 12px;
+	}
+	/* Mobile Menu	*/
+
+
+	.top-left-content li a {
+		font-size: 14px;
+	}
+	.top-left-content li a i {
+		margin-right: 0px;
+		padding-right: 3px;
+		border-right: none;
+	}
+	.top-right-content li a {
+		padding: 4px 10px;
+		min-width: 80px;
+		width: 80%;
+		font-size: 14px;
+	}
+	.top-right-content li a i{
+		display: none;
+	}
+	.logo-area h2 a {
+		font-size: 30px;
+	}
+
+
+
+
+	h1 {
+		font-size: 40px;
+		font-size: 4rem;
+	}
+	.main-form-area {
+		max-width: 100%;
+	}
+	.btn-sty-1 {
+		padding: 8px 12px;
+		font-size: 14px;
+	}
+	.main-form-area form .form-group:last-child {
+		width: 16%;
+	}
+	.section-padding {
+		padding: 80px 0;
+	}
+	footer {
+		padding-top: 80px;
+	}
+	.avaiable-single-blood a span {
+		font-size: 25px;
+	}
+	.avaiable-single-blood a span:last-child {
+		font-size: 14px;
+	}
+	.avaiable-blood-donors .cits-title h2 {
+		margin-bottom: 28px;
+	}
+	.cits-title h2 {
+		font-size: 30px;
+	}
+
+
+
+	.blood-lab-right .cits-title p {
+		margin-top: 0;
+		font-size: 14px;
+	}
+	.blood-lab-icon i {
+		font-size: 22px;
+	}
+	.blood-lab-icon {
+		height: 45px;
+		width: 45px;
+		margin-right: 10px;
+	}
+	.blood-lab-content p {
+		font-size: 14px;
+	}
+	.blood-lab-left img {
+		height: 365px;
+	}
+	.blood-lab-left a {
+		width: 120px;
+		height: 120px;
+		font-size: 38px;
+	}
+	.bloodlab-committed-btm-content i {
+		font-size: 40px;
+	}
+	.bloodlab-committed-btm-content p {
+		font-size: 16px;
+		margin-top: 10px;
+	}
+	.bloodlab-committed-top-content h2 {
+		font-size: 30px;
+		line-height: 50px;
+	}
+	.gallery-main-area {
+		grid-gap: 10px;
+	}
+	.gallery-main-area a img {
+		height: 280px;
+	}
+	.all-compaign-gallery .cits-title, .all-team-members .cits-title {
+		margin-bottom: 30px;
+	}
+	.single-clients-say p {
+		font-size: 16px;
+		width: 100%;
+	}
+	.single-clients-say h2 {
+		font-size: 26px;
+	}
+	.clients-cl-area .owl-prev i, .clients-cl-area .owl-next i {
+		font-size: 16px;
+		line-height: 25px;
+		width: 30px;
+		height: 30px;
+	}
+	.call-new-content h4 {
+		font-size: 18px;
+	}
+	.call-new-content h2 {
+		font-size: 40px;
+		padding: 15px 0;
+	}
+	.call-new-content ul li a {
+		font-size: 15px;
+		margin-right: 20px;
+	}
+	.top-icon {
+		left: 46%;
+	}
+	.community-partner-image li img {
+		width: 100px;
+		height: 100px;
+	}
+
+
+
+
+	.footer-left-content form input {
+		font-size: 16px;
+		padding: 14px;
+	}
+	.copyright p {
+		font-size: 16px;
+	}
+}
+
+@media all and (max-width: 767px){
+	.header-top-area .row .col-md-8 {
+		display: none;
+	}
+	.header-top-area::before {
+		display: none;
+	}
+	.header-top-area::after {
+		width: 100%;
+	}
+	.top-right-content {
+		justify-content: center;
+		padding: 10px 0;
+	}
+	.top-right-content li a i{
+		display: inline-block;
+	}
+	.top-right-content li a {
+		min-width: 100px;
+	}
+	.header-bottom::before {
+		width: 35%;
+	}
+
+
+	.main-form-area form {
+		justify-content: center;
+		flex-direction: column;
+	}
+	h1 {
+		font-size: 30px;
+		font-size: 3rem;
+	}
+	.main-form-area {
+		max-width: 75%;
+	}
+	.main-form-area form .form-group:last-child {
+		width: 100%;
+		justify-content: center;
+	}
+	.main-form-area form .form-group {
+		width: 70%;
+		margin-right: 2%;
+		padding: 9px;
+	}
+	.select2.select2-container.select2-container--default {
+		width: 100% !important;
+	}
+	.main-form-area form .form-group {
+		width: 95%;
+		margin-right: 0;
+		padding: 8px;
+		margin-bottom: 18px;
+	}
+	.section-padding {
+		padding: 50px 0;
+	}
+	footer {
+		padding-top: 50px;
+	}
+
+
+
+	.blood-lab-right {
+		margin-top: 20px;
+	}
+	.bloodlab-committed-top-content h2 {
+		font-size: 25px;
+		margin-bottom: 30px;
+	}
+	.gallery-main-area {
+		grid-template-columns: auto auto;
+	}
+	.community-partner-image {
+		justify-content: center;
+		margin-top: 0px;
+		flex-wrap: wrap;
+	}
+	.community-partner-image li {
+		width: 50%;
+		margin-top: 40px;
+		text-align: center;
+	}
+
+	.footer-items {
+		margin-top: 30px;
+	}
+	.footer-left-content p {
+		padding: 25px 0;
+		padding-bottom: 0;
+	}
+	.footer-items.footer-left-content ul {
+		justify-content: start;
+		margin-top: 20px;
+	}
+
+
+	.footer-middle {
+		margin: 30px 0;
+	}
+	.footer-top-content {
+		padding-bottom: 25px;
+	}
+	.footer-top-content ul li a {
+		font-size: 16px;
+	}
+}
+
+@media all and (max-width: 575px){
+	.container{
+		width: 90%;
+	}
+
+	.cits-title h2 {
+		font-size: 28px;
+	}
+
+
+
+	.single-clients-say {
+		padding: 50px 0;
+	}
+
+	.clients-cl-area .owl-nav {
+		visibility: hidden;
+		opacity: 0;
+		transition: .3s;
+	}
+	.clients-cl-area:hover .owl-nav{
+		visibility: visible;
+		opacity: 1;
+		transition: .3s;
+	}
+	.single-clients-say p {
+		width: 100%;
+	}
+	.call-new-content {
+		border: 5px solid #FB3640;
+		padding: 35px 0;
+	}
+	.call-new-content h4 {
+		font-size: 15px;
+	}
+	.call-new-content h2 {
+		font-size: 26px;
+	}
+	.call-new-content ul li a {
+		font-size: 14px;
+		margin-right: 15px;
+	}
+	.top-icon i {
+		font-size: 14px;
+	}
+	.top-icon {
+		width: 35px;
+		height: 35px;
+		top: -20px;
+	}
+
+
+	.footer-top-content ul li a {
+		font-size: 14px;
+		margin-left: 20px;
+	}
+	.footer-left-content p {
+		padding: 10px 0;
+		padding-bottom: 0;
+		font-size: 14px;
+	}
+	.footer-items h4 {
+		font-size: 22px;
+	}
+	.footer-items ul li a {
+		font-size: 14px;
+	}
+	.footer-items.footer-left-content ul li a {
+		font-size: 18px;
+		width: 35px;
+		height: 35px;
+	}
+	.footer-items.footer-left-content ul li {
+		margin-right: 10px;
+	}
+	.copyright p {
+		font-size: 14px;
+	}
+	.footer-left-content form input {
+		font-size: 14px;
+		padding: 12px;
+	}
+	.btn-sty-1 i {
+		font-size: 16px;
+	}
+	.btn-sty-1 {
+		padding: 6px 10px;
+		font-size: 14px;
+	}
+}
+
+@media all and (max-width: 450px){
+	.header-bottom::before {
+		width: 42%;
+	}
+
+
+	.main-form-area {
+		max-width: 95%;
+	}
+	.cits-title h2 {
+		font-size: 25px;
+	}
+
+	.gallery-main-area {
+		grid-template-columns: auto;
+	}
+	.community-partner-image li {
+		width: 100%;
+		margin-top: 30px;
+	}
+	.footer-top-content {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.footer-top-content ul {
+		padding-bottom: 18px;
+	}
+}

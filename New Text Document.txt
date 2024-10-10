@@ -1,0 +1,16 @@
+1 Home Page------------------------------Done
+2 Search Result: Page Link
+3 Donor Single Profile: Page Link
+4 About Page ----------------------------Done
+5 Gallery -------------------------------Done
+6 Contact Page Link
+7 Volounters Page -----------------------Done
+8 Blog Page Link
+9 Single Blog Post
+10 Campaigs
+11 Single Campaigns
+12 404 page -----------------------------Done
+13 Registration Link
+14 Login
+15 Terms and Conditions -----------------Done
+16 Privacy Policy -----------------------Done
